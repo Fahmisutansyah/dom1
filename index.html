@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style1.css">
+        <link href="https://fonts.googleapis.com/css?family=Anton|Varela+Round" rel="stylesheet"> 
+        <title>Form</title>
+    </head>
+
+    <body> 
+        <section id='header'>
+            <div class='headerText'>
+                <h1>Submission</h1>
+            </div>
+
+            <div class='headerDescription'>
+                <p>Please fill up the form to proceed to the table.</p>
+            </div>
+        </section>
+
+        <section id='form'>
+            <form>
+                <label for='first_name'>First Name</label>
+                <input type='text' name='first_name' id='first_name'>
+                <br>
+                <label for='last_name'>Last Name</label>
+                <input type='text' name='last_name' id='last_name'>
+                <br>
+                <label for='birth'>Date of Birth</label>
+                <input type='number' name='date' id='date' min='1' max='31' step='1'>
+                <select id="month" name="month">
+                    <option value=''></option>
+                    <option value="January">January</option>
+                    <option value="February">February</option>
+                    <option value="March">March</option>
+                    <option value="April">April</option>
+                    <option value="May">May</option>
+                    <option value="June">June</option>
+                    <option value="July">July</option>
+                    <option value="August">August</option>
+                    <option value="September">September</option>
+                    <option value="October">October</option>
+                    <option value="November">November</option>
+                    <option value="December">December</option>
+                </select>
+                <input type='number' name='year' id='year' step='1'>
+                <br>
+                <label for="age">Age</label>
+                <input type="number" name="age" id="age" step="1">
+                <br>
+                <label for='education'>Latest Education</label>
+                <select id='education' name='education'>
+                    <option value=''></option>
+                    <option value='S2'>S2/Master</option>
+                    <option value='S1'>S1/Bachelor</option>
+                    <option value='D4'>D4</option>
+                    <option value='D3'>D3</option>
+                    <option value='SMA'>SMA</option>
+                    <option value='SMP'>SMP</option>
+                    <option value='SD'>SD</option>
+                </select>
+                <br>
+                <button type='button' id='dataButton' onclick= 'fillTable()'>Look at data</button>
+            </form>
+        </section>
+<!-- 
+        <section id='table'>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Date of Birth</th>
+                        <th>Age</th>
+                        <th>Latest Education</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>fahmisutansyah</td>
+                        <td>25 July 1998</td>
+                        <td>20</td>
+                        <td>SMA</td>
+                    </tr>
+                </tbody>
+            </table> -->
+        </section>
+        <script src="script.js"></script>
+    </body>
+</html>
